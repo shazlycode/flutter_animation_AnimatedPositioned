@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animation/components.dart';
+import 'package:flutter_animation/second_screen.dart';
 
 enum How { show, hide }
 
@@ -20,30 +22,30 @@ class _HomeSceenState extends State<HomeSceen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-//          Container(
-//            child: Hero(
-//              tag: "hero",
-//              child: Image.asset(
-//                "images/logo.png",
-//                fit: BoxFit.cover,
-//              ),
-//            ),
-//          ),
-//          Center(
-//            child: RaisedButton(onPressed: () {
-//              Navigator.push(context, MaterialPageRoute(builder: (context) {
-//                return SecondScreen();
-//              }));
-//            }),
-//          ),
-//          Container(
-//            child: SizedBox(width: 250.0, child: colorizedAnimation),
-//          ),
-//          Text(
-//            "How Are You",
-//            style: ktxtSyle.copyWith(
-//                fontWeight: FontWeight.w900, backgroundColor: Colors.blue),
-//          ),
+              Container(
+                child: Hero(
+                  tag: "hero",
+                  child: Image.asset(
+                    "images/logo.png",
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              Center(
+                child: RaisedButton(onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return SecondScreen();
+                  }));
+                }),
+              ),
+              Container(
+                child: SizedBox(width: 250.0, child: colorizedAnimation),
+              ),
+              Text(
+                "How Are You",
+                style: ktxtSyle.copyWith(
+                    fontWeight: FontWeight.w900, backgroundColor: Colors.blue),
+              ),
               Stack(
                 children: <Widget>[
                   Positioned(
