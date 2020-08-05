@@ -32,11 +32,14 @@ class _HomeSceenState extends State<HomeSceen> {
                 ),
               ),
               Center(
-                child: RaisedButton(onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return SecondScreen();
-                  }));
-                }),
+                child: RaisedButton(
+                    child: Text("Start Animation"),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return SecondScreen();
+                      }));
+                    }),
               ),
               Container(
                 child: SizedBox(width: 250.0, child: colorizedAnimation),
