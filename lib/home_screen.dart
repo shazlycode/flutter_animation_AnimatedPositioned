@@ -47,7 +47,7 @@ class _HomeSceenState extends State<HomeSceen> {
               Text(
                 "How Are You",
                 style: ktxtSyle.copyWith(
-                    fontWeight: FontWeight.w900, backgroundColor: Colors.blue),
+                    fontWeight: FontWeight.w900, backgroundColor: Colors.yellow),
               ),
               Stack(
                 children: <Widget>[
