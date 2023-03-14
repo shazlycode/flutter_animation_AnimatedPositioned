@@ -32,7 +32,7 @@ class _HomeSceenState extends State<HomeSceen> {
                 ),
               ),
               Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                     child: Text("Start Animation"),
                     onPressed: () {
                       Navigator.push(context,
@@ -77,14 +77,14 @@ class _HomeSceenState extends State<HomeSceen> {
                       duration: Duration(seconds: 1))
                 ],
               ),
-              RaisedButton(
+              ElevatedButton(
                   child: Text("Show"),
                   onPressed: () {
                     setState(() {
                       how = How.show;
                     });
                   }),
-              RaisedButton(
+              ElevatedButton(
                   child: Text("Hide"),
                   onPressed: () {
                     setState(() {
