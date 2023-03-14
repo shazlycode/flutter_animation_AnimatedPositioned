@@ -33,7 +33,7 @@ class _HomeSceenState extends State<HomeSceen> {
               ),
               Center(
                 child: ElevatedButton(
-                    child: Text("Start Animation"),
+                    child: Text("Start Animations"),
                     onPressed: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) {
